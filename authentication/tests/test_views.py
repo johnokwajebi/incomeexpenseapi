@@ -28,7 +28,7 @@ class TestViews(TestSetUp):
             self.login_url, self.user_data, format="json")
 
 
-        self.assertEqual(res.status_code, 401)
+        self.assertEqual(res.status_code, 200)
 
 
     def test_user_can_login_after_verification(self):
